@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K4B3RGK9C0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K4B3RGK9C0');
+    </script>
+
+
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Life</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
+
+
+
+  <script type="module" crossorigin src="/assets/index-MkWpMyMb.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-egA233h8.css">
+</head>
+<body>
+
+<div class="center">
+    <div style="display: flex; align-items: center;">
+        <p><b>Delete life?</b></p>
+        <md-elevated-button id="clickYes">
+            <p>Yes</p>
+        </md-elevated-button>
+    </div>
+    <a href="#" id="shareLink" style="text-align: center;">Share with your friends!</a>
+</div>
+
+<div class="fineprint">
+    <p>Made with ❤️ by Haizi Izzudin • Works best on latest Chrome, Firefox and Safari • <a href="https://github.com/HaiziIzzudin/deletelife" target="_blank">What's this?</a></p>
+</div>
+
+
+
+
+
+<md-dialog style="max-width: 320px;" id="confirmDelete">
+
+    <div slot="headline">Permanently delete?</div>
+
+    <md-icon slot="icon" class="material-symbols-outlined">delete</md-icon>
+    
+    <form id="form" slot="content" method="dialog">
+        Deleting life will also remove you from the world.
+    </form>
+    
+    <div slot="actions">
+        <md-text-button form="form" id="commenceDelete">Delete</md-text-button>
+        <md-filled-tonal-button form="form" value="cancel" autofocus>Cancel</md-filled-tonal-button>
+    </div>
+
+</md-dialog>
+
+
+<md-dialog id="loadingDelete">
+    <span slot="headline">
+        <span style="flex: 1;">Deleting...</span>
+        <md-icon-button form="form" value="close" aria-label="Close dialog"></md-icon-button>
+    </span>
+    <form id="form" slot="content" method="dialog">
+        <!-- This is a floating sheet with title. Floating sheets offer no action buttons at the bottom, but there's a close icon button at the top right. They accept any HTML content. -->
+        <md-linear-progress indeterminate></md-linear-progress>
+    </form>
+    
+</md-dialog>
+
+
+<md-dialog type="alert" id="errDelete">
+    <div slot="headline">
+        <span class="material-symbols-outlined">error</span>
+        Error
+    </div>
+    <form id="form" slot="content" method="dialog">
+        Error deleting your life. You are too worthy to be deleted. Proceed your life as is. The future awaits!
+    </form>
+    <div slot="actions">
+        <md-text-button form="form" id="learnMore" href="https://www.healthline.com/health/mental-health/reasons-to-live" target="_blank">Learn More</md-text-button>
+        <md-text-button form="form" id="OK" autofocus>OK</md-text-button>
+    </div>
+</md-dialog>
+
+
+<md-dialog id="shareWithFriends">
+    <span slot="headline">
+        <span style="flex: 1;">
+            Share this QR code to open this webpage.
+            <p style="font-size: 15px; margin: 0; line-height: 1.5;">(Click anywhere other than this window to close)</p>
+        </span>
+    </span>
+    <form id="form" slot="content" method="dialog" style="text-align: center;">
+        <img src="/assets/deleteLife-qr-DQeCRLkb.png" style="width: 70%;">
+        <p>https://delete.iziizz.com</p>
+    </form>
+</md-dialog>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
