@@ -1,0 +1,49 @@
+:root {
+  /* Generated from Material Theme Builder Figma plugin or `material-color-utilities`. */
+  --md-sys-color-primary: #006A6A;
+  --md-sys-color-on-primary: #FFFFFF;
+  --md-sys-color-primary-container: #6FF7F6;
+  --md-sys-color-on-primary-container: #002020;
+}
+* {
+  font-family: Lexend, sans-serif;
+}
+body {
+  background: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center a {
+  margin-top: 50px;
+  /* font-size: 10px; */
+  color: inherit;
+}
+.center p { font-size: 25px; margin: 0}
+md-elevated-button { 
+  margin-left: 15px; 
+  /* font-size: inherit; */
+}
+.fineprint{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 20px;
+  text-align: center;
+}
+.fineprint a, .fineprint p {
+  color: whitesmoke;
+  font-size: 7px;
+}
